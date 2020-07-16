@@ -1,0 +1,126 @@
+<script>
+
+$(document).ready(function () {
+
+});
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75843178-1', 'auto');
+  ga('send', 'pageview');
+
+  $(window).load(function() {
+    $('.site-nav').hover(function(){
+      $('.trigger').attr('id','mobile');
+  });
+ $("#dob").datepicker({
+ 	        changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true });
+
+  
+  check();
+  
+});
+
+function check(){
+  $("#submit").click(function(){
+    var c = initialFirst();
+    var a = verify();
+    var b = dob();
+    var d = a + b + c;
+    $('#licence').text(
+    	"The first 13 Digits of your licence Number is : " + d.toUpperCase()
+    );
+    console.log(d);
+    
+    
+  })
+}
+
+function verify(){
+  var a = "";
+  var lastNameChar= "";
+  var lastName = $("#lastname").val();
+  
+  var countLastName = $("#lastname").val().replace(/ /g,'').length;
+  if(countLastName > 5)
+    {
+     lastNameChar = lastName.substring(0,5);
+     a = lastNameChar;
+     
+    }
+  else
+    {
+      lastNameChar = lastName.substring(0,countLastName);
+      var repeatValue = 5 - countLastName;
+      var fixed = '9';
+      a = lastNameChar + fixed.repeat(repeatValue)
+      
+     }
+  return a;
+}
+
+function dob(){
+  var d="";
+  var dateOfBirth = $('#dob').val();
+  var first = dateOfBirth.substring(8,9);
+  var last = dateOfBirth.substring(9,10);
+  var date = dateOfBirth.substring(3,5);
+  var gender = $("#gender").val();
+  var month = dateOfBirth.substring(0,2);
+  
+  if(gender == "Male"){
+    d = month;
+  }
+  
+  else if(gender == "Female"){
+    var firstChar = month.substring(0,1);
+    
+    if(firstChar == 0){
+    d = month.replace(0,"5");
+    }
+    else if (firstChar == "1"){
+     d = month.replace(1,"6");
+      
+    }
+    
+  }
+  else{
+
+     alert("Gender can't be found");
+  }
+
+  
+   var result = first + d + date + last;
+ return result;
+ 
+  
+}
+
+function initialFirst(){
+  
+  var firstName = $("#firstname").val();
+  var middleName = $("#middlename").val();
+  var initialValue="";
+  var defaultValue = "9";
+  var first = firstName.substring(0,1);
+      if(middleName){
+        
+        var last = middleName.substring(0,1);
+        initialValue = first + last;
+              
+      }
+  else{
+    
+   initialValue =  first + defaultValue.repeat(1);
+    
+}
+return initialValue;
+  
+}
+
+</script>

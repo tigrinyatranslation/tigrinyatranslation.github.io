@@ -1,0 +1,64 @@
+<header id="header" class="has-header">
+<div class="social-media">
+  <div class="container">
+  <div id="subheader">
+    <div class="contact-info">
+      <i class="fa fa-envelope mail"></i><a href="mailto:hello@socialwire.co.uk">tigrinyatranslation </a>  
+      <i class="fa fa-phone-square phone"></i><a>00447737130767 </a>
+    </div>
+     <ul class="nav navbar-nav">
+      <li><a href="https://www.facebook.com/groups/287531305633896/" target="new"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+     
+     </ul>
+  </div>
+  </div>
+</div>
+
+
+<div class="site-header">
+   <nav class="site-right">
+    <ul class="nav navbar-nav">
+      <li>
+    <a class="page-link logo" href="{{ site.baseurl }}/">ትግርኛ ናብ ጎጎል ምእታው</a>
+  </li>
+  </ul>
+  </nav>
+
+
+  <nav class="site-nav">
+    
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+    
+      <ul class="nav navbar-nav trigger">
+   
+   
+       
+        {% for page in site.pages %}
+          {% if page.title %}
+          <li class="site-page-links">
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+           </li>
+          {% endif %}
+        {% endfor %}
+
+       
+    
+
+  </ul>
+       
+      <!--<div class="trigger">
+          <a class="page-link" href="{{ site.baseurl }}/">Blog</a>
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>-->
+    </nav>
+
+</div>
+
+
+</header>

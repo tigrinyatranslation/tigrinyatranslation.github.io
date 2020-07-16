@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+  {% include google-analytics.html %}
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+         <div class="page-banner">
+              <h1 class="banner-title"> {{ page.title }}</h1>
+          </div>
+      <div class="row main">  
+      <div class="wrapper">
+        {{ content }}
+      </div>
+      </div>
+
+    </div>
+
+    
+   {% include footer.html %}
+
+  </body>
+</html>
