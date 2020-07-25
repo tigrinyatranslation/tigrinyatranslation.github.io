@@ -36,7 +36,7 @@
    
        
         {% for page in site.pages %}
-          {% if page.title %}
+          {% if page.title != 'Comment policy' %}
           <li class="site-page-links">
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
            </li>
