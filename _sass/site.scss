@@ -39,15 +39,15 @@
 		width:100%;
 	}
 	.hero-headline{
-		font-size: 52px;
+		font-size: 21px;
 		line-height:1.0625;
-		font-weight:200 !important;
+		font-weight:600;
 		letter-spacing: -0.02em
 	}
 	.eyebrow{
 		display:inline-block;
 		width:100%;
-		font-size:24px;
+		font-size:14px;
 		line-height:1.333;
 		font-weight:300;
 		letter-spacing:0em;
@@ -101,6 +101,9 @@
   .content{
   padding-top:40px;
   }
+  .content p{
+   font-size:18px;
+    }
   .container{
   display:flex;
   justify-content: space-around;
@@ -343,7 +346,7 @@ table{
     right: 0px;
     left: 0px;
     z-index: 0;
-    color:#7B8887;
+    color:#FFF;
     overflow:auto;
     clear:both;
     font-size:14px;
@@ -378,7 +381,7 @@ table{
 
 .page-banner{
   padding:60px 0px 65px;
-  background-color:#bc4966;
+  background-color:deepskyblue;
   .banner-title{
     text-align:center;
     color:#FFF;

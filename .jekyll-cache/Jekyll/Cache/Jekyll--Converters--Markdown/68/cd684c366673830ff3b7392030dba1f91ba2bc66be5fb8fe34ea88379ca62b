@@ -1,12 +1,6 @@
----
-layout: post
-title: ዛንታ እዛ ስእሊ, ሰኣሊ ኪቨን ካርተር ኢዩ ዝብሃል 
-description: ዛንታ, እዛ ስእሊ, ኪቨን ካርተር  
----
-
-<div class="wrapper">
+I"	<div class="wrapper">
 <div class="post=image">
-<img src="/assets/Images/Hungrychild.jpg" style="width:75%">
+<img src="/assets/Images/Hungrychild.jpg" style="width:75%" />
 </div>
 
 
@@ -15,3 +9,4 @@ description: ዛንታ, እዛ ስእሊ, ኪቨን ካርተር
 </div>
 
 </div>
+:ET
