@@ -38,12 +38,12 @@ h5 { font-size: .9em; }
 h6 { font-size: .8em; }
 
 /* Links ============================================== */
-a { color: #ac3f5b; text-decoration: none; }
+a { color: #00ace6; text-decoration: none; }
 
-a:hover { color: #bc4966; text-decoration: none; }
+a:hover { color: deepskyblue; text-decoration: none; }
 
 /* Block Quotes ============================================== */
-blockquote { color: #BBB; border-left: 4px solid #bc4966; padding-left: 15px; font-size: 17px; letter-spacing: -1px; font-style: italic; }
+blockquote { color: #BBB; border-left: 4px solid deepskyblue; padding-left: 15px; font-size: 17px; letter-spacing: -1px; font-style: italic; }
 
 blockquote > :last-child { margin-bottom: 0; }
 
@@ -90,11 +90,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .site-nav .menu-icon { display: none; }
 
-@media screen and (max-width: 700px) { .site-nav { position: absolute; top: 5px; right: 3px; background-color: #fff; border: 1px solid #cfcfcf; border-radius: 5px; text-align: right; margin-right: 2px; padding-top: 15px; }
-  .site-nav .menu-icon { display: block; float: right; width: 50px; height: 30px; line-height: 0; text-align: center; }
-  .site-nav .trigger { clear: both; display: none; }
-  .site-nav .navbar-nav { margin: 6.6px -4px; }
-  .site-nav .page-link { display: block; padding: 5px 10px; } }
+@media screen and (max-width: 700px) { .site-nav { position: absolute; top: 5px; right: 3px; background-color: #fff; border: 1px solid #cfcfcf; border-radius: 5px; text-align: right; margin-right: 2px; padding-top: 15px; } .site-nav .menu-icon { display: block; float: right; width: 50px; height: 30px; line-height: 0; text-align: center; } .site-nav .trigger { clear: both; display: none; } .site-nav .navbar-nav { margin: 6.6px -4px; } .site-nav .page-link { display: block; padding: 5px 10px; } }
 
 .site-nav .page-link { font-family: 'Open Sans'; font-weight: 400 !important; line-height: 1.1446; letter-spacing: 0.05em; }
 
@@ -288,9 +284,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .large-10 { width: 100%; }
 
-.hero-headline { font-size: 52px; line-height: 1.0625; font-weight: 200 !important; letter-spacing: -0.02em; }
+.hero-headline { font-size: 21px; line-height: 1.0625; font-weight: 600; letter-spacing: -0.02em; }
 
-.eyebrow { display: inline-block; width: 100%; font-size: 24px; line-height: 1.333; font-weight: 300; letter-spacing: 0em; }
+.eyebrow { display: inline-block; width: 100%; font-size: 14px; line-height: 1.333; font-weight: 300; letter-spacing: 0em; }
 
 .section { position: relative; z-index: 1; padding-top: 29px; padding-bottom: 25px; }
 
@@ -308,6 +304,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 .headline-kt { text-align: center; color: #fff; text-transform: uppercase; }
 
 .content { padding-top: 40px; }
+
+.content p { font-size: 18px; }
 
 .container { display: flex; justify-content: space-around; flex-direction: column; width: 300px; }
 
@@ -344,14 +342,11 @@ ol.rs-carousel-pagination { position: absolute; z-index: 998; top: 64%; left: 50
 
 .carousel-image img { width: 1920px; }
 
-.rs-carousel-pagination-link a { color: #bc4966 !important; }
+.rs-carousel-pagination-link a { color: deepskyblue !important; }
 
 .rs-carousel-pagination-link-active a { color: #444 !important; }
 
-@media (max-width: 768px) { .carousel-image img { width: 500px; }
-  .prev, .next { top: 10%; }
-  ol.rs-carousel-pagination { top: 254px; }
-  .fa-arrow-left, .fa-arrow-right { color: #000; font-size: 17px !important; } }
+@media (max-width: 768px) { .carousel-image img { width: 500px; } .prev, .next { top: 10%; } ol.rs-carousel-pagination { top: 254px; } .fa-arrow-left, .fa-arrow-right { color: #000; font-size: 17px !important; } }
 
 /* Index page styling
 ========================================================= */
@@ -391,7 +386,7 @@ table { width: 100%; }
 
 #subheader li a i, #subheader i, #footer .contact-info-footer li i { font-size: 18px !important; }
 
-#subheader li a:hover, .site-header li a:hover { background-color: #bc4966 !important; }
+#subheader li a:hover, .site-header li a:hover { background-color: deepskyblue !important; }
 
 #subheader li a:hover, .site-header li a:hover { color: #fff !important; }
 
@@ -405,17 +400,11 @@ table { width: 100%; }
 
 .site-page-links { display: flex !important; }
 
-@media (max-width: 768px) { .social-media { display: none; }
-  .site-page-links { display: flex; justify-content: center; }
-  .site-header { top: 0px; height: 62px; }
-  .page-content { margin-top: 71px; }
-  .site-right { padding-top: 0px; }
-  .site-right ul { margin-bottom: 0px; }
-  .site-right .navbar-nav { margin: 0px; } }
+@media (max-width: 768px) { .social-media { display: none; } .site-page-links { display: flex; justify-content: center; } .site-header { top: 0px; height: 62px; } .page-content { margin-top: 71px; } .site-right { padding-top: 0px; } .site-right ul { margin-bottom: 0px; } .site-right .navbar-nav { margin: 0px; } }
 
 /*Footer
 =========================================================== */
-#footer { padding: 60px; background-color: #222; position: relative; bottom: 0px; right: 0px; left: 0px; z-index: 0; color: #7B8887; overflow: auto; clear: both; font-size: 14px; width: 100%; }
+#footer { padding: 60px; background-color: #222; position: relative; bottom: 0px; right: 0px; left: 0px; z-index: 0; color: #FFF; overflow: auto; clear: both; font-size: 14px; width: 100%; }
 
 #footer a { color: #94A3A3; }
 
@@ -423,7 +412,7 @@ table { width: 100%; }
 
 #footer ul li a i { font-size: 14px; margin-right: 6px; }
 
-#footer ul li a:hover { color: #bc4966; margin-left: 6px; transition: all 0.2s ease-out; }
+#footer ul li a:hover { color: deepskyblue; margin-left: 6px; transition: all 0.2s ease-out; }
 
 #footer .contact-info-footer li i { padding-right: 15px; }
 
@@ -431,7 +420,7 @@ table { width: 100%; }
 
 /*Pages style
 =========================================================== */
-.page-banner { padding: 60px 0px 65px; background-color: #bc4966; }
+.page-banner { padding: 60px 0px 65px; background-color: deepskyblue; }
 
 .page-banner .banner-title { text-align: center; color: #FFF; }
 
