@@ -90,7 +90,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .site-nav .menu-icon { display: none; }
 
-@media screen and (max-width: 700px) { .site-nav { position: absolute; top: 5px; right: 3px; background-color: #fff; border: 1px solid #cfcfcf; border-radius: 5px; text-align: right; margin-right: 2px; padding-top: 15px; } .site-nav .menu-icon { display: block; float: right; width: 50px; height: 30px; line-height: 0; text-align: center; } .site-nav .trigger { clear: both; display: none; } .site-nav .navbar-nav { margin: 6.6px -4px; } .site-nav .page-link { display: block; padding: 5px 10px; } }
+@media screen and (max-width: 700px) { .site-nav { position: absolute; top: 5px; right: 3px; background-color: #fff; border: 1px solid #cfcfcf; border-radius: 5px; text-align: right; margin-right: 2px; padding-top: 15px; }
+  .site-nav .menu-icon { display: block; float: right; width: 50px; height: 30px; line-height: 0; text-align: center; }
+  .site-nav .trigger { clear: both; display: none; }
+  .site-nav .navbar-nav { margin: 6.6px -4px; }
+  .site-nav .page-link { display: block; padding: 5px 10px; } }
 
 .site-nav .page-link { font-family: 'Open Sans'; font-weight: 400 !important; line-height: 1.1446; letter-spacing: 0.05em; }
 
@@ -113,7 +117,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .post-list > li { display: block; padding: 0.1em 1.5em; }
 
-.post-link { font-family: 'Open Sans'; font-weight: 300; font-size: 1.5em; letter-spacing: -1px; color: #454545; display: block; width: 100%; }
+.post-link { font-family: 'Open Sans'; font-weight: 300; font-size: 15px; letter-spacing: -1px; color: #454545; display: block; width: 100%; }
 
 @media screen and (max-width: 700px) { .post-link { font-size: 1.33em; } }
 
@@ -284,7 +288,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .large-10 { width: 100%; }
 
-.hero-headline { font-size: 21px; line-height: 1.0625; font-weight: 600; letter-spacing: -0.02em; }
+.hero-headline { font-size: 17px; line-height: 1.0625; font-weight: 600; letter-spacing: -0.02em; }
 
 .eyebrow { display: inline-block; width: 100%; font-size: 14px; line-height: 1.333; font-weight: 300; letter-spacing: 0em; }
 
@@ -305,7 +309,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .content { padding-top: 40px; }
 
-.content p { font-size: 18px; }
+.content p { font-size: 15px; }
 
 .container { display: flex; justify-content: space-around; flex-direction: column; width: 300px; }
 
@@ -346,7 +350,10 @@ ol.rs-carousel-pagination { position: absolute; z-index: 998; top: 64%; left: 50
 
 .rs-carousel-pagination-link-active a { color: #444 !important; }
 
-@media (max-width: 768px) { .carousel-image img { width: 500px; } .prev, .next { top: 10%; } ol.rs-carousel-pagination { top: 254px; } .fa-arrow-left, .fa-arrow-right { color: #000; font-size: 17px !important; } }
+@media (max-width: 768px) { .carousel-image img { width: 500px; }
+  .prev, .next { top: 10%; }
+  ol.rs-carousel-pagination { top: 254px; }
+  .fa-arrow-left, .fa-arrow-right { color: #000; font-size: 17px !important; } }
 
 /* Index page styling
 ========================================================= */
@@ -400,7 +407,13 @@ table { width: 100%; }
 
 .site-page-links { display: flex !important; }
 
-@media (max-width: 768px) { .social-media { display: none; } .site-page-links { display: flex; justify-content: center; } .site-header { top: 0px; height: 62px; } .page-content { margin-top: 71px; } .site-right { padding-top: 0px; } .site-right ul { margin-bottom: 0px; } .site-right .navbar-nav { margin: 0px; } }
+@media (max-width: 768px) { .social-media { display: none; }
+  .site-page-links { display: flex; justify-content: center; }
+  .site-header { top: 0px; height: 62px; }
+  .page-content { margin-top: 71px; }
+  .site-right { padding-top: 0px; }
+  .site-right ul { margin-bottom: 0px; }
+  .site-right .navbar-nav { margin: 0px; } }
 
 /*Footer
 =========================================================== */
@@ -417,6 +430,10 @@ table { width: 100%; }
 #footer .contact-info-footer li i { padding-right: 15px; }
 
 #footer .contact-info-footer li { padding-bottom: 10px; }
+
+#footer h3 { font-size: 15px; }
+
+#footer p { font-size: 12px; }
 
 /*Pages style
 =========================================================== */
