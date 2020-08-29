@@ -50,7 +50,8 @@
 		font-size:14px;
 		line-height:1.333;
 		font-weight:300;
-		letter-spacing:0em;
+    letter-spacing:0em;
+    padding-bottom:5px;
 	}
 	.section {
 	    position: relative;
@@ -410,6 +411,24 @@ table{
 }
 
 .logo{
+  font-size:18px;
+}
+
+.notes-section li{
+  list-style: none;;
+}
+.fa-check{
+  font-size:20px;
+  color:green;
+}
+.icon{
+  padding-right:10px;
+  font-size:20px;
+}
+.notes{
+  display:flex;
+}
+.editor{
   font-size:18px;
 }
 

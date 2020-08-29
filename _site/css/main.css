@@ -115,13 +115,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* Archive ============================================== */
 .post-list { margin-left: 0; list-style: none; }
 
-.post-list > li { display: block; padding: 0.1em 1.5em; }
+.post-list > li { display: block; padding: 0.4em 1.5em; }
 
 .post-link { font-family: 'Open Sans'; font-weight: 300; font-size: 15px; letter-spacing: -1px; color: #454545; display: block; width: 100%; }
 
 @media screen and (max-width: 700px) { .post-link { font-size: 1.33em; } }
 
-.post-meta { font-size: 16.11px; color: #cfcfcf; text-transform: uppercase; display: inline-block; }
+.post-meta { font-size: 13.11px; color: #cfcfcf; text-transform: uppercase; display: inline-block; }
 
 /* Post Format ============================================== */
 .post-header { margin-bottom: 30px; }
@@ -290,7 +290,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .hero-headline { font-size: 17px; line-height: 1.0625; font-weight: 600; letter-spacing: -0.02em; }
 
-.eyebrow { display: inline-block; width: 100%; font-size: 14px; line-height: 1.333; font-weight: 300; letter-spacing: 0em; }
+.eyebrow { display: inline-block; width: 100%; font-size: 14px; line-height: 1.333; font-weight: 300; letter-spacing: 0em; padding-bottom: 5px; }
 
 .section { position: relative; z-index: 1; padding-top: 29px; padding-bottom: 25px; }
 
@@ -448,5 +448,15 @@ table { width: 100%; }
 table { table-layout: fixed; width: 100%; }
 
 .logo { font-size: 18px; }
+
+.notes-section li { list-style: none; }
+
+.fa-check { font-size: 20px; color: green; }
+
+.icon { padding-right: 10px; font-size: 20px; }
+
+.notes { display: flex; }
+
+.editor { font-size: 18px; }
 
 /*# sourceMappingURL=main.css.map */
