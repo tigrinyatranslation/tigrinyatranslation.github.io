@@ -93,12 +93,57 @@
     font-size: 15px;
     font-weight: 700;
    }
+   
    .main-image{
      height:333px;
      @include media-query($on-palm){
        height:230px;
      }
    }
+   .align-center{
+     text-align: center;
+     
+   }
+   .introduction{
+     background: lightcoral;
+     color:white;
+     padding: 60px 0px;
+     .inner-introduction-contents{
+      display:flex;
+      justify-content: space-between;
+    }
+     .info-link{
+         color:#33793E;
+     }
+     .info-link:hover{
+      color:blue;
+  }     
+    .add-tigrinya-articles-section{
+      padding-left:40px;
+    }
+    @include media-query($on-palm){
+      .inner-introduction-contents{
+        display:flex;
+      flex-direction: column;
+      }
+      .add-tigrinya-articles-section{
+        padding-left:5px;
+      }
+    }
+    
+
+   }
+   .intro-heading{
+    padding-bottom:20px;
+  }
+  .how-to-contribute-section{
+    padding:60px 0px;
+  }
+  .image-to-contribute{
+    .google-contribute-heading{
+      padding-top:60px;
+    }
+  }
 
    .image-title{
     position: relative;
